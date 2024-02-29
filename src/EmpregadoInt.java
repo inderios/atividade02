@@ -1,4 +1,3 @@
 public interface EmpregadoInt {
-    void registrar();
-    void atualizar();
+    void adicionarEmpregado(Empregado empregado, Depatarmento departamento);
 }

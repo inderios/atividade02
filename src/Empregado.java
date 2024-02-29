@@ -4,6 +4,14 @@ public class Empregado implements Comparable<Empregado> {
     private String nome;
     private int numeroID;
     private String salario;
+    private  Depatarmento depatarmento;
+    public Depatarmento getDepatarmento() {
+        return depatarmento;
+    }
+
+    public void setDepatarmento(Depatarmento depatarmento) {
+        this.depatarmento = depatarmento;
+    }
 
     public String getSalario() {
         return salario;
@@ -13,9 +21,10 @@ public class Empregado implements Comparable<Empregado> {
         this.salario = salario;
     }
 
-    public Empregado(String nome, int numeroID) {
+    public Empregado(String nome, int numeroID, String salario) {
         this.nome = nome;
         this.numeroID = numeroID;
+        this.salario = salario;
     }
 
     @Override

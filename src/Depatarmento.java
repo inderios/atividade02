@@ -4,7 +4,7 @@ import java.util.Objects;
 public class Depatarmento implements Comparable<Depatarmento>{
     private String departamentoId;
     private String nomeDepartamento;
-    private ArrayList<Empregado> empregadosLista = new ArrayList<Empregado>();
+    private ArrayList<Empregado> empregadosLista;
 
     public ArrayList<Empregado> getEmpregadosLista() {
         return empregadosLista;
@@ -14,9 +14,10 @@ public class Depatarmento implements Comparable<Depatarmento>{
         this.empregadosLista = empregadosLista;
     }
 
-    public Depatarmento(String departamentoId, String nomeDepartamento) {
+    public Depatarmento(String departamentoId, String nomeDepartamento, ArrayList<Empregado> empregadosLista) {
         this.departamentoId = departamentoId;
         this.nomeDepartamento = nomeDepartamento;
+        this.empregadosLista = empregadosLista;
     }
 
     @Override
